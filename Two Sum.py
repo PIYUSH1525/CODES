@@ -28,6 +28,6 @@ class Solution:
 
 nums = [3,3]
 target = 6
-solution = Solution()
-result = solution.twoSum(nums, target)
+alpha = Solution()
+result = alpha.twoSum(nums, target)
 print(result)
