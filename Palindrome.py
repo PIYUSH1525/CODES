@@ -2,7 +2,7 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
         z = str(x)
         n = z[::-1]
-        if n == z:
+        if n == z:                                              # Solution One using Conversion
             return True
         else:
             return False
