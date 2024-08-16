@@ -14,7 +14,6 @@ class Solution:
         #     if dicto[num] > l // 2:
         #         return num
 
-
         # APPROACH 1
         "the majority element will always come in center due to the condition n/2 so sort the array and return"
         "the center element "
