@@ -4,17 +4,22 @@ from typing import List
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         "APPROACH 2 USING HASH SET`"
-
+        hashset = set()
+        for i in nums:
+            if i in hashset:
+                return True
+            hashset.add(i)
+        return False
 
 
         "APPROACH 1"
 
-        nums.sort()
-        for i in range (len(nums)):
-            if nums[i] == nums[i+1]:
-                return True
-        return False
-
+        # nums.sort()
+        # for i in range (len(nums)):
+        #     if nums[i] == nums[i+1]:
+        #         return True
+        # return False
+        #
 
 
 
