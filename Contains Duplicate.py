@@ -3,6 +3,12 @@
 from typing import List
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
+        "APPROACH 2 USING HASH SET`"
+
+
+
+        "APPROACH 1"
+
         nums.sort()
         for i in range (len(nums)):
             if nums[i] == nums[i+1]:
@@ -16,6 +22,6 @@ class Solution:
 
 
 
-
-nums = [1, 2, 3, 1]
-piyush = Solution.containsDuplicate(nums)
+nums = [2, 14, 18, 22, 22]  # List to check for duplicates
+piyush = Solution()
+print(piyush.containsDuplicate(nums))
