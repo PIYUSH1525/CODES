@@ -1,6 +1,5 @@
 import collections
-
-
+from typing import List
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         d = collections.defaultdict(list)
@@ -8,5 +7,14 @@ class Solution:
             count = [0] * 26
             for char in s:
                 count[ord(char) - ord('a')] += 1
-            d[tuple(count)].append(s)
-        return d.values()
+            key = tuple(count)
+            d[key].append(s)
+            # d[tuple(count)].append(s)
+        return list(d.values())
+        # "d.values()"
+
+
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+result = Solution()
+result = result.groupAnagrams(strs)
+print(result)
