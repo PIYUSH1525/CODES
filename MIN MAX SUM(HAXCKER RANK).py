@@ -16,3 +16,21 @@ import sys
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
+def miniMaxSum(arr):
+    # Write your code here
+    minn = 0
+    maxx = 0
+    arr.sort()
+    for i in range(0, 4):
+        minn += arr[i]
+    arr.reverse()
+    for i in range(0, 4):
+        maxx += arr[i]
+
+    print(minn, maxx)
+
+
+if __name__ == '__main__':
+    arr = list(map(int, input().rstrip().split()))
+
+    miniMaxSum(arr)
