@@ -12,6 +12,7 @@
 # Example
 # 7=6
 # data = [1, 2, 3, 3, 1, 4]
+# approach 2 is to swap the whole list when left and right are not same
 def min_operations_to_palindrome(data):
     n = len(data)
     left, right = 0, n - 1
@@ -20,14 +21,14 @@ def min_operations_to_palindrome(data):
     while left < right:
         if data[left] != data[right]:
             if data[left] < data[right]:
-                data[right] = data[left]
+                data[left:right + 1] = data[left:right + 1][::-1]
             else:
-                data[left] = data[right]
+                data[left:right + 1] = data[left:right + 1][::-1]
             operations += 1
-        left += 1
-        right -= 1
+        left, right = 0, n - 1
     data[mid]= data[mid+1]
     return operations
+
 data = [3, 5, 2, 5, 3]
 print("Minimum operations to make array palindromic:", min_operations_to_palindrome(data))
 print("Transformed array:", data)
