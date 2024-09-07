@@ -5,3 +5,16 @@
 # Example
 #
 # There are  elements, two positive, two negative and one zero. Their ratios are ,  and . Results are printed as:
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'plusMinus' function below.
+#
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
