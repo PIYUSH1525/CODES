@@ -18,3 +18,29 @@ import sys
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
+
+def plusMinus(arr):
+    arr.sort()
+    min_count = 0
+    max_count = 0
+    zero_count = 0
+    for i in range(0, len(arr)):
+        if arr[i] == 0:
+            zero_count += 1
+        elif arr[i] > 0:
+            max_count += 1
+        elif arr[i] < 0:
+            min_count += 1
+    print(max_count / len(arr))
+    print(min_count / len(arr))
+    print(zero_count / len(arr))
+
+    # Write your code here
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)
