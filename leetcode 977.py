@@ -56,4 +56,4 @@ class Solution:
                 res.append(nums[r] * nums[r])
                 r -= 1
 
-        return res[::- 1]  # reverse
+        return reversed(res)  # reverse
