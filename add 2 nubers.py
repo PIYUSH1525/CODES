@@ -23,3 +23,13 @@
 # Input: num1 = -10, num2 = 4
 # Output: -6
 # Explanation: num1 + num2 = -6, so - 6 is returned.
+
+class Solution:
+    def sum(self, num1: int, num2: int) -> int:
+        while num2>0:
+            num1+=1
+            num2-=1
+        while num2<0:
+            num1 -= 1
+            num2+= 1
+        return num1
