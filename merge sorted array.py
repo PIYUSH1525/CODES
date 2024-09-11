@@ -101,11 +101,13 @@
 
 nums1 = [1, 2, 3, 0, 0, 0]
 nums2 = [2, 5, 6]
+nums3= []
 for i in nums2:
     nums1.append(i)
+print(nums1)
 nums1.sort()
 for j in nums1:
-    if j == 0:
+    if nums1[j] == 0:
         nums1.pop(j)
 
-
+print(nums1)
