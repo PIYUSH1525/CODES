@@ -99,15 +99,13 @@
 # merge is [1, 2, 2, 3, 5, 6]
 # with the underlined elements coming from nums1.
 
-class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
-        for i in nums2:
-            nums1.append(i)
-        nums1.sort()
-        for j in nums1:
-            if j == 0:
-                nums1.pop(j)
+nums1 = [1, 2, 3, 0, 0, 0]
+nums2 = [2, 5, 6]
+for i in nums2:
+    nums1.append(i)
+nums1.sort()
+for j in nums1:
+    if j == 0:
+        nums1.pop(j)
 
-        """
-        Do not return anything, modify nums1 in-place instead.
-        """
+
