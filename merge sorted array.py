@@ -102,12 +102,14 @@
 nums1 = [1, 2, 3, 0, 0, 0]
 nums2 = [2, 5, 6]
 nums3= []
-for i in nums2:
-    nums1.append(i)
-print(nums1)
-nums1.sort()
-for j in nums1:
-    if nums1[j] == 0:
-        nums1.pop(j)
+for i in nums1:
+    nums3.append(i)
+# print(nums1)
+# nums1.sort()
+for j in nums2:
+    nums3.append(j)
+nums3.sort()
+while 0 in nums3:
+        nums3.pop(0)
+print(nums3)
 
-print(nums1)
