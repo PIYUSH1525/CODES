@@ -33,6 +33,7 @@ import sys
 # The function is expected to return an INTEGER.
 # The function accepts INTEGER_ARRAY a as parameter.
 #
+#hackerrank
 
 def lonelyinteger(a):
     # Write your code here useing hashset
