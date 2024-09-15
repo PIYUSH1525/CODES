@@ -20,5 +20,6 @@ class Solution:
                 hashset[i] = 1
         sorted_elements = sorted(hashset.items(), key=lambda x: x[1], reverse=True)
         top_k = [item[0] for item in sorted_elements[:k]]
+
         return top_k
 
