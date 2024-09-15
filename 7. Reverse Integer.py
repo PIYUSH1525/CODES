@@ -13,5 +13,4 @@ class Solution:
         ans *= sign
         if ans < INT_MIN or ans > INT_MAX:
             return 0
-
         return ans
