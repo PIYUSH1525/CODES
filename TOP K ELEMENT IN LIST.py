@@ -18,6 +18,7 @@ class Solution:
                 hashset[i] += 1
             else:
                 hashset[i] = 1
-        for i in range(k):
-            for num, count in hashset.items():
-                return num
+        sorted_elements = sorted(hashset.items(), key=lambda x: x[1], reverse=True)
+        top_k = [item[0] for item in sorted_elements[:k]]
+        return top_k
+
