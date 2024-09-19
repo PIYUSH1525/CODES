@@ -15,6 +15,8 @@ class Solution:
 
 gvbfdgvbdf
 dzxfc
+czx cxc xcxz
+xcxz
 
 
 
