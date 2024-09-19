@@ -11,13 +11,6 @@ class Solution:
             index = index-1
         return [1] + digits
 
-
-
-
-
-sds
-
-
 digits = [9,9,9]
 alpha = Solution()
 result = alpha.plusOne(digits)
