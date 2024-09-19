@@ -5,5 +5,8 @@ y = x%10
 z = 222
 print(x//10)
 print(y)
-gjgj
+gjgjdfg(''
+        'dfds'
+        'dfdf'
+        '')
 has_ghostscript()
