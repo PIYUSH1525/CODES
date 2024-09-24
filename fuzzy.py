@@ -40,7 +40,6 @@ defuzz_mom = defuzzify(x, mfx, 'mom')
 defuzz_som = defuzzify(x, mfx, 'som')
 defuzz_lom = defuzzify(x, mfx, 'lom')
 
-# Output the defuzzified values
 print("Centroid:", defuzz_centroid)
 print("Bisector:", defuzz_bisector)
 print("MOM (Mean of Maximum):", defuzz_mom)
