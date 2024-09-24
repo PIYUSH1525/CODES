@@ -47,7 +47,6 @@ print("MOM (Mean of Maximum):", defuzz_mom)
 print("SOM (Smallest of Maximum):", defuzz_som)
 print("LOM (Largest of Maximum):", defuzz_lom)
 
-# Plotting the membership function and defuzzified values
 plt.plot(x, mfx, 'b', label='Membership function')
 plt.axvline(defuzz_centroid, color='r', linestyle='--', label='Centroid')
 plt.axvline(defuzz_bisector, color='g', linestyle='--', label='Bisector')
