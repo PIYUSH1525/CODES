@@ -29,9 +29,9 @@ def defuzzify(x, mfx, method):
     else:
         raise ValueError("Invalid defuzzification method.")
 
-# Example Usage:
-x = np.arange(0, 11, 1)  # Universe of discourse
-mfx = fuzz.trimf(x, [2, 5, 8])  # Triangular membership function
+
+x = np.arange(0, 11, 1)
+mfx = fuzz.trimf(x, [2, 5, 8])
 
 # Defuzzify using different methods
 defuzz_centroid = defuzzify(x, mfx, 'centroid')
